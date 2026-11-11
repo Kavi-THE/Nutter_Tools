@@ -1,5 +1,6 @@
 package Java.Nutter_Tools.interfaces;
 
-public class Payable {
-    
+public interface Payable{
+    double calculatePayments();
 }
+
