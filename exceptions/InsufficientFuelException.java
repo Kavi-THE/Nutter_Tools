@@ -1,5 +1,7 @@
-package Java.Nutter_Tools.exceptions;
+package exceptions;
 
-public class InsufficientFuelException {
-    
+public class InsufficientFuelException extends Exception {
+    public InsufficientFuelException(String message) {
+        super(message);
+    }
 }
