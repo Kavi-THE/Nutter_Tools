@@ -4,14 +4,14 @@ A Java-based console application developed for object-oriented programming to ef
 
 ---
 
-## 👥 Group Details
+##  Group Details
 * **Course:** IIC 1153 - Object-Oriented Programming
 * **Group Number:** [Insert Group Number, e.g., B10]
 * **Submission Deadline:** 19th November 2026
 
 ---
 
-## 🚀 Project Overview
+##  Project Overview
 Managing heavy machinery and transport vehicles across multiple construction sites can be chaotic. This system centralizes fleet administration by providing:
 * **Fleet Tracking:** Monitor whether vehicles are available, deployed on-site, or under maintenance.
 * **Operations Logging:** Record daily construction hours, trips, and fuel consumption.
@@ -20,7 +20,7 @@ Managing heavy machinery and transport vehicles across multiple construction sit
 
 ---
 
-## ⚙️ Core OOP Principles Implemented
+##  Core OOP Principles Implemented
 * **Inheritance & Abstraction:** Abstract base class `Vehicle` with specialized subclasses (`HeavyMachinery` and `TransportVehicle`).
 * **Encapsulation:** Private fields accessed securely through getter and setter methods.
 * **Polymorphism:** Overridden `calculateOperationalCost()` methods for customized payment and expense logic.
@@ -31,7 +31,7 @@ Managing heavy machinery and transport vehicles across multiple construction sit
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 src/
