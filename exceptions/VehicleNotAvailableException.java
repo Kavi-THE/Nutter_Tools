@@ -1,5 +1,7 @@
-package Java.Nutter_Tools.exceptions;
+package exceptions;
 
-public class VehicleNotAvailableException {
-    
+public class VehicleNotAvailableException extends Exception {
+    public VehicleNotAvailableException(String message) {
+        super(message);
+    }
 }
