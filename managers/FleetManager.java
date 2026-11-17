@@ -1,27 +1,31 @@
-package services;
-
+package managers;
 import models.Vehicle;
-import exceptions.FleetException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class FleetManager {
-    private List<Vehicle> fleet = new ArrayList<>();
+    private List<Vehicle> fleet;
+
+    public FleetManager() {
+        this.fleet = FileManager.loadFleet();
+    }
 
     public void addVehicle(Vehicle v) {
         fleet.add(v);
+        saveChanges();
     }
 
-    public Vehicle findVehicle(String vehicleId) throws FleetException {
+    public Vehicle getVehicle(String id) {
         for (Vehicle v : fleet) {
-            if (v.getVehicleId().equalsIgnoreCase(vehicleId)) {
-                return v;
-            }
+            if (v.getVehicleId().equalsIgnoreCase(id)) return v;
         }
-        throw new FleetException("Vehicle with ID " + vehicleId + " not found!");
+        return null;
     }
 
-    public List<Vehicle> getFleet() {
+    public List<Vehicle> getAllVehicles() {
         return fleet;
+    }
+
+    public void saveChanges() {
+        FileManager.saveFleet(fleet);
     }
 }
