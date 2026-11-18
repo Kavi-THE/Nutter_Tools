@@ -1,8 +1,4 @@
 package models;
-
-
-
-package models;
 import interfaces.Payable;
 import interfaces.Trackable;
 import exceptions.InsufficientFuelException;
@@ -14,7 +10,7 @@ import java.util.List;
 public abstract class Vehicle implements Payable, Trackable, Serializable {
     private String vehicleId;
     private String model;
-    private String status; 
+    private String status; // "Available", "On-Site", "Maintenance"
     private double currentFuelLevel;
     private ConstructionSite currentLocation;
     private List<OperationLog> logs;
@@ -27,7 +23,6 @@ public abstract class Vehicle implements Payable, Trackable, Serializable {
         this.logs = new ArrayList<>();
     }
 
-    
     public abstract double getBaseRate(); 
 
     @Override
@@ -62,7 +57,6 @@ public abstract class Vehicle implements Payable, Trackable, Serializable {
         logs.add(new OperationLog(date, hours, fuelUsed));
     }
 
-    
     public String getVehicleId() { return vehicleId; }
     public String getModel() { return model; }
     public String getStatus() { return status; }

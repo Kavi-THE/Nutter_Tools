@@ -4,16 +4,14 @@ import java.io.Serializable;
 public class OperationLog implements Serializable {
     private String date;
     private double hoursWorked;
-    private double fuelconsumed;
+    private double fuelConsumed;
 
-    public OperationLog(String date, double hoursWorked, double fuelConsumed){
+    public OperationLog(String date, double hoursWorked, double fuelConsumed) {
         this.date = date;
         this.hoursWorked = hoursWorked;
-        this.fuelconsumed = fuelConsumed;
+        this.fuelConsumed = fuelConsumed;
     }
 
-    public double getHoursWorked()  { return hoursWorked; }
-    public double getFuelConsumed() { return fuelconsumed; }    
-    
-    
+    public double getHoursWorked() { return hoursWorked; }
+    public double getFuelConsumed() { return fuelConsumed; }
 }

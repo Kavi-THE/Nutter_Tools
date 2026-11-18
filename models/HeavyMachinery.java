@@ -1,6 +1,6 @@
 package models;
 
-public class HeavyMachinery extends Vehicle{ 
+public class HeavyMachinery extends Vehicle {
     private double hourlyRate;
 
     public HeavyMachinery(String vehicleId, String model, double initialFuel, double hourlyRate) {
@@ -12,5 +12,4 @@ public class HeavyMachinery extends Vehicle{
     public double getBaseRate() {
         return hourlyRate;
     }
-    
 }
