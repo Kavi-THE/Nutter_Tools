@@ -10,7 +10,6 @@ public class TransportVehicle extends Vehicle {
 
     @Override
     public double getBaseRate() {
-        // For simplicity in this structure, assuming 1 trip = 1 hour of logged time
         return ratePerTrip;
     }
 }
