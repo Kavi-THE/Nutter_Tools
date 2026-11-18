@@ -1,4 +1,4 @@
-package Java.Nutter_Tools.models;
+package models;
 
 public class HeavyMachinery extends Vehicle{ 
     private double hourlyRate;

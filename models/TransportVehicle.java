@@ -1,4 +1,4 @@
-package Java.Nutter_Tools.models;
+package models;
 package models;
 
 public class TransportVehicle extends Vehicle {

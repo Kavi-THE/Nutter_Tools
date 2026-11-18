@@ -1,4 +1,4 @@
-package Nutter_Tools.models;
+package models;
 import java.io.Serializable;
 
 
