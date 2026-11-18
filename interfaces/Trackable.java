@@ -1,4 +1,4 @@
-package Java.Nutter_Tools.interfaces;
+package interfaces;
 import models.ConstructionSite;
 
 public interface Trackable {
