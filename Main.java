@@ -24,7 +24,7 @@ public class Main {
                     System.out.print("ID: "); String id = scanner.nextLine();
                     System.out.print("Model: "); String model = scanner.nextLine();
                     System.out.print("Initial Fuel (Liters): "); double fuel = Double.parseDouble(scanner.nextLine());
-                    System.out.print("Hourly Rate ($): "); double rate = Double.parseDouble(scanner.nextLine());
+                    System.out.print("Hourly Rate (Rs.): "); double rate = Double.parseDouble(scanner.nextLine());
                     fleetManager.addVehicle(new HeavyMachinery(id, model, fuel, rate));
                     System.out.println("Vehicle Added.");
 
@@ -58,7 +58,7 @@ public class Main {
                     System.out.print("Vehicle ID: "); String id = scanner.nextLine();
                     Vehicle v = fleetManager.getVehicle(id);
                     if (v != null) {
-                        System.out.println("Total Payment Due: $" + v.calculatePayment());
+                        System.out.println("Total Payment Due: Rs." + v.calculatePayment());
                     }
 
                 } else if (choice.equals("5")) {
