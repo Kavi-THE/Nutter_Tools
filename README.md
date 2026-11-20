@@ -6,7 +6,7 @@ A Java-based console application developed for object-oriented programming to ef
 
 ##  Group Details
 * **Course:** IIC 1153 - Object-Oriented Programming
-* **Group Number:** [Insert Group Number, e.g., B10]
+* **Group Number:** Group 16
 * **Submission Deadline:** 19th November 2026
 
 ---
